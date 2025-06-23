@@ -13,6 +13,7 @@ import secrets
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 from collections import defaultdict
+import re
 
 # Import config
 from config import HOST, PORT
@@ -83,14 +84,19 @@ def rate_limit_check(request: Request):
     return True
 
 def validate_filters(dept_abbr: Optional[str], divisi_abbr: Optional[str], blok_kode: Optional[str]):
-    """Validate input filters"""
-    if dept_abbr and (len(dept_abbr) > 10 or not dept_abbr.isalnum()):
+    """Validate input filters - Updated to allow more characters"""
+    # Allow alphanumeric, underscore, dash, and common characters
+    
+    # Pattern: letters, numbers, underscore, dash, space
+    valid_pattern = re.compile(r'^[a-zA-Z0-9_\-\s]+$')
+    
+    if dept_abbr and (len(dept_abbr) > 20 or not valid_pattern.match(dept_abbr)):
         raise HTTPException(status_code=400, detail="Invalid dept_abbr format")
     
-    if divisi_abbr and (len(divisi_abbr) > 10 or not divisi_abbr.replace('_', '').isalnum()):
+    if divisi_abbr and (len(divisi_abbr) > 20 or not valid_pattern.match(divisi_abbr)):
         raise HTTPException(status_code=400, detail="Invalid divisi_abbr format")
     
-    if blok_kode and (len(blok_kode) > 15 or not blok_kode.replace('_', '').replace('-', '').isalnum()):
+    if blok_kode and (len(blok_kode) > 20 or not valid_pattern.match(blok_kode)):
         raise HTTPException(status_code=400, detail="Invalid blok_kode format")
 
 app = FastAPI(

@@ -1,0 +1,3283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>TPH Route - PDE AFD-OA D003A</name>
+    <description>Optimized TPH Route using Nearest Neighbor Algorithm</description>
+    <Style id="tphStyle">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="pathStyle">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Placemark>
+      <name>1. TPH 12</name>
+      <description>
+ID: 68065
+KodeTph: NULL
+Coordinates: -1.7642041, 111.5097053
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097053,-1.7642041,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2. TPH 174</name>
+      <description>
+ID: 180536
+KodeTph: NULL
+Coordinates: -1.764237, 111.5097144
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097144,-1.764237,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3. TPH 173</name>
+      <description>
+ID: 180535
+KodeTph: NULL
+Coordinates: -1.7642474, 111.5097049
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097049,-1.7642474,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4. TPH 181</name>
+      <description>
+ID: 180543
+KodeTph: NULL
+Coordinates: -1.7642207, 111.5096737
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5096737,-1.7642207,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>5. TPH 11</name>
+      <description>
+ID: 68064
+KodeTph: NULL
+Coordinates: -1.7642879, 111.509676
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.509676,-1.7642879,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>6. TPH 182</name>
+      <description>
+ID: 180544
+KodeTph: NULL
+Coordinates: -1.7643588, 111.5095307
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5095307,-1.7643588,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7. TPH 172</name>
+      <description>
+ID: 180534
+KodeTph: NULL
+Coordinates: -1.7645321, 111.5094327
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5094327,-1.7645321,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8. TPH 171</name>
+      <description>
+ID: 180533
+KodeTph: NULL
+Coordinates: -1.7645541, 111.5094181
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5094181,-1.7645541,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9. TPH 170</name>
+      <description>
+ID: 180532
+KodeTph: NULL
+Coordinates: -1.7646426, 111.5093741
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093741,-1.7646426,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10. TPH 183</name>
+      <description>
+ID: 180545
+KodeTph: NULL
+Coordinates: -1.764635, 111.5093398
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093398,-1.764635,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11. TPH 184</name>
+      <description>
+ID: 180546
+KodeTph: NULL
+Coordinates: -1.7646967, 111.5093004
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093004,-1.7646967,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>12. TPH 185</name>
+      <description>
+ID: 180547
+KodeTph: NULL
+Coordinates: -1.764777, 111.5092622
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5092622,-1.764777,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>13. TPH 169</name>
+      <description>
+ID: 180531
+KodeTph: NULL
+Coordinates: -1.7649069, 111.5092222
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5092222,-1.7649069,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>14. TPH 168</name>
+      <description>
+ID: 180530
+KodeTph: NULL
+Coordinates: -1.7649353, 111.5091942
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091942,-1.7649353,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>15. TPH 167</name>
+      <description>
+ID: 180529
+KodeTph: NULL
+Coordinates: -1.7649466, 111.5091821
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091821,-1.7649466,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>16. TPH 166</name>
+      <description>
+ID: 180528
+KodeTph: NULL
+Coordinates: -1.765041, 111.5095479
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5095479,-1.765041,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>17. TPH 165</name>
+      <description>
+ID: 180527
+KodeTph: NULL
+Coordinates: -1.7650336, 111.5096143
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5096143,-1.7650336,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>18. TPH 164</name>
+      <description>
+ID: 180526
+KodeTph: NULL
+Coordinates: -1.7649953, 111.5097365
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097365,-1.7649953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>19. TPH 163</name>
+      <description>
+ID: 180525
+KodeTph: NULL
+Coordinates: -1.7647528, 111.5101015
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5101015,-1.7647528,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>20. TPH 162</name>
+      <description>
+ID: 180524
+KodeTph: NULL
+Coordinates: -1.7647457, 111.5101547
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5101547,-1.7647457,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>21. TPH 161</name>
+      <description>
+ID: 180523
+KodeTph: NULL
+Coordinates: -1.7646118, 111.5103134
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5103134,-1.7646118,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>22. TPH 159</name>
+      <description>
+ID: 180521
+KodeTph: NULL
+Coordinates: -1.7645035, 111.5103465
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5103465,-1.7645035,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23. TPH 160</name>
+      <description>
+ID: 180522
+KodeTph: NULL
+Coordinates: -1.7644951, 111.510338
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.510338,-1.7644951,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>24. TPH 158</name>
+      <description>
+ID: 180520
+KodeTph: NULL
+Coordinates: -1.7643356, 111.5103665
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5103665,-1.7643356,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25. TPH 175</name>
+      <description>
+ID: 180537
+KodeTph: NULL
+Coordinates: -1.7639225, 111.5099174
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5099174,-1.7639225,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>26. TPH 178</name>
+      <description>
+ID: 180540
+KodeTph: NULL
+Coordinates: -1.7639026, 111.5099153
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5099153,-1.7639026,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>27. TPH 179</name>
+      <description>
+ID: 180541
+KodeTph: NULL
+Coordinates: -1.7639685, 111.5098426
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5098426,-1.7639685,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>28. TPH 180</name>
+      <description>
+ID: 180542
+KodeTph: NULL
+Coordinates: -1.7640798, 111.5097411
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097411,-1.7640798,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>29. TPH 176</name>
+      <description>
+ID: 180538
+KodeTph: NULL
+Coordinates: -1.7638204, 111.5100346
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5100346,-1.7638204,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>30. TPH 177</name>
+      <description>
+ID: 180539
+KodeTph: NULL
+Coordinates: -1.7637541, 111.5101186
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5101186,-1.7637541,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>31. TPH 126</name>
+      <description>
+ID: 164719
+KodeTph: None
+Coordinates: -1.7631855, 111.5100557
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5100557,-1.7631855,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>32. TPH 125</name>
+      <description>
+ID: 164718
+KodeTph: None
+Coordinates: -1.7631631, 111.5100282
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5100282,-1.7631631,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33. TPH 124</name>
+      <description>
+ID: 164717
+KodeTph: None
+Coordinates: -1.7632768, 111.5097415
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097415,-1.7632768,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>34. TPH 123</name>
+      <description>
+ID: 164716
+KodeTph: None
+Coordinates: -1.7633473, 111.5095893
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5095893,-1.7633473,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>35. TPH 122</name>
+      <description>
+ID: 164715
+KodeTph: None
+Coordinates: -1.7633549, 111.5093747
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093747,-1.7633549,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>36. TPH 121</name>
+      <description>
+ID: 164714
+KodeTph: None
+Coordinates: -1.7633713, 111.5093352
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093352,-1.7633713,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>37. TPH 117</name>
+      <description>
+ID: 164710
+KodeTph: None
+Coordinates: -1.7636794, 111.5091171
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091171,-1.7636794,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>38. TPH 116</name>
+      <description>
+ID: 164709
+KodeTph: None
+Coordinates: -1.7637245, 111.5091558
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091558,-1.7637245,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>39. TPH 115</name>
+      <description>
+ID: 164708
+KodeTph: None
+Coordinates: -1.7637861, 111.5091916
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091916,-1.7637861,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40. TPH 114</name>
+      <description>
+ID: 164707
+KodeTph: None
+Coordinates: -1.7638242, 111.5091692
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091692,-1.7638242,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>41. TPH 118</name>
+      <description>
+ID: 164711
+KodeTph: None
+Coordinates: -1.7636059, 111.5090269
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5090269,-1.7636059,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>42. TPH 120</name>
+      <description>
+ID: 164713
+KodeTph: None
+Coordinates: -1.7634795, 111.5088916
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5088916,-1.7634795,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>43. TPH 119</name>
+      <description>
+ID: 164712
+KodeTph: None
+Coordinates: -1.7634616, 111.5088518
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5088518,-1.7634616,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>44. TPH 113</name>
+      <description>
+ID: 164706
+KodeTph: None
+Coordinates: -1.7640381, 111.508923
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.508923,-1.7640381,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>45. TPH 111</name>
+      <description>
+ID: 164704
+KodeTph: None
+Coordinates: -1.7640816, 111.5087784
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5087784,-1.7640816,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>46. TPH 112</name>
+      <description>
+ID: 164705
+KodeTph: None
+Coordinates: -1.764121, 111.5087342
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5087342,-1.764121,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>47. TPH 109</name>
+      <description>
+ID: 164702
+KodeTph: None
+Coordinates: -1.7645872, 111.5085676
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5085676,-1.7645872,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>48. TPH 110</name>
+      <description>
+ID: 164703
+KodeTph: None
+Coordinates: -1.7646132, 111.5085691
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5085691,-1.7646132,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>49. TPH 108</name>
+      <description>
+ID: 164701
+KodeTph: None
+Coordinates: -1.7648977, 111.5085374
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5085374,-1.7648977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50. TPH 107</name>
+      <description>
+ID: 164700
+KodeTph: None
+Coordinates: -1.7651782, 111.508271
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.508271,-1.7651782,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>51. TPH 60</name>
+      <description>
+ID: 68113
+KodeTph: NULL
+Coordinates: -1.7652442, 111.5083037
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5083037,-1.7652442,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>52. TPH 106</name>
+      <description>
+ID: 164699
+KodeTph: None
+Coordinates: -1.7651253, 111.5081666
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5081666,-1.7651253,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>53. TPH 105</name>
+      <description>
+ID: 164698
+KodeTph: None
+Coordinates: -1.7650781, 111.5079159
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5079159,-1.7650781,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54. TPH 104</name>
+      <description>
+ID: 164697
+KodeTph: None
+Coordinates: -1.7650067, 111.5078235
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5078235,-1.7650067,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>55. TPH 55</name>
+      <description>
+ID: 68108
+KodeTph: NULL
+Coordinates: -1.7649908, 111.5077892
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5077892,-1.7649908,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>56. TPH 103</name>
+      <description>
+ID: 164696
+KodeTph: None
+Coordinates: -1.7649688, 111.5078071
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5078071,-1.7649688,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57. TPH 102</name>
+      <description>
+ID: 164695
+KodeTph: None
+Coordinates: -1.7649561, 111.5077823
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5077823,-1.7649561,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>58. TPH 101</name>
+      <description>
+ID: 164694
+KodeTph: None
+Coordinates: -1.7648162, 111.507735
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.507735,-1.7648162,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59. TPH 54</name>
+      <description>
+ID: 68107
+KodeTph: NULL
+Coordinates: -1.7648152, 111.5077219
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5077219,-1.7648152,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>60. TPH 76</name>
+      <description>
+ID: 164669
+KodeTph: None
+Coordinates: -1.7643206, 111.5070711
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5070711,-1.7643206,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>61. TPH 77</name>
+      <description>
+ID: 164670
+KodeTph: None
+Coordinates: -1.7641982, 111.5070418
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5070418,-1.7641982,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>62. TPH 74</name>
+      <description>
+ID: 164667
+KodeTph: None
+Coordinates: -1.7642757, 111.5068402
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5068402,-1.7642757,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>63. TPH 75</name>
+      <description>
+ID: 164668
+KodeTph: None
+Coordinates: -1.7642611, 111.5068158
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5068158,-1.7642611,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>64. TPH 68</name>
+      <description>
+ID: 68121
+KodeTph: NULL
+Coordinates: -1.7643334, 111.5068546
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5068546,-1.7643334,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>65. TPH 67</name>
+      <description>
+ID: 68120
+KodeTph: NULL
+Coordinates: -1.7644229, 111.5069908
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5069908,-1.7644229,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>66. TPH 73</name>
+      <description>
+ID: 164666
+KodeTph: None
+Coordinates: -1.7641852, 111.5065612
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5065612,-1.7641852,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>67. TPH 44</name>
+      <description>
+ID: 68097
+KodeTph: NULL
+Coordinates: -1.7641416, 111.5064626
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5064626,-1.7641416,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>68. TPH 43</name>
+      <description>
+ID: 68096
+KodeTph: NULL
+Coordinates: -1.7642569, 111.5062827
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5062827,-1.7642569,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>69. TPH 42</name>
+      <description>
+ID: 68095
+KodeTph: NULL
+Coordinates: -1.7642844, 111.5060239
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5060239,-1.7642844,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>70. TPH 39</name>
+      <description>
+ID: 68092
+KodeTph: NULL
+Coordinates: -1.7642647, 111.5059923
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5059923,-1.7642647,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>71. TPH 57</name>
+      <description>
+ID: 68110
+KodeTph: NULL
+Coordinates: -1.7640894, 111.5058941
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058941,-1.7640894,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>72. TPH 59</name>
+      <description>
+ID: 68112
+KodeTph: NULL
+Coordinates: -1.7641959, 111.5057885
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5057885,-1.7641959,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>73. TPH 58</name>
+      <description>
+ID: 68111
+KodeTph: NULL
+Coordinates: -1.7641946, 111.505782
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.505782,-1.7641946,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>74. TPH 220</name>
+      <description>
+ID: 180582
+KodeTph: NULL
+Coordinates: -1.7642288, 111.5057815
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5057815,-1.7642288,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>75. TPH 219</name>
+      <description>
+ID: 180581
+KodeTph: NULL
+Coordinates: -1.7643273, 111.5056044
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5056044,-1.7643273,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>76. TPH 218</name>
+      <description>
+ID: 180580
+KodeTph: NULL
+Coordinates: -1.7643446, 111.5055406
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055406,-1.7643446,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>77. TPH 217</name>
+      <description>
+ID: 180579
+KodeTph: NULL
+Coordinates: -1.7643572, 111.505492
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.505492,-1.7643572,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>78. TPH 216</name>
+      <description>
+ID: 180578
+KodeTph: NULL
+Coordinates: -1.7644035, 111.5053797
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5053797,-1.7644035,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>79. TPH 62</name>
+      <description>
+ID: 68115
+KodeTph: NULL
+Coordinates: -1.7644179, 111.5053867
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5053867,-1.7644179,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>80. TPH 215</name>
+      <description>
+ID: 180577
+KodeTph: NULL
+Coordinates: -1.7644335, 111.5053032
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5053032,-1.7644335,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>81. TPH 214</name>
+      <description>
+ID: 180576
+KodeTph: NULL
+Coordinates: -1.7644571, 111.5052223
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5052223,-1.7644571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>82. TPH 63</name>
+      <description>
+ID: 68116
+KodeTph: NULL
+Coordinates: -1.7644505, 111.505195
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.505195,-1.7644505,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>83. TPH 213</name>
+      <description>
+ID: 180575
+KodeTph: NULL
+Coordinates: -1.7644818, 111.5050992
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050992,-1.7644818,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>84. TPH 64</name>
+      <description>
+ID: 68117
+KodeTph: NULL
+Coordinates: -1.7645065, 111.5050414
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050414,-1.7645065,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>85. TPH 212</name>
+      <description>
+ID: 180574
+KodeTph: NULL
+Coordinates: -1.7645216, 111.5050107
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050107,-1.7645216,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>86. TPH 211</name>
+      <description>
+ID: 180573
+KodeTph: NULL
+Coordinates: -1.764601, 111.5048634
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5048634,-1.764601,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>87. TPH 65</name>
+      <description>
+ID: 68118
+KodeTph: NULL
+Coordinates: -1.7646227, 111.504842
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.504842,-1.7646227,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>88. TPH 210</name>
+      <description>
+ID: 180572
+KodeTph: NULL
+Coordinates: -1.7646868, 111.504715
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.504715,-1.7646868,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>89. TPH 66</name>
+      <description>
+ID: 68119
+KodeTph: NULL
+Coordinates: -1.7647352, 111.5046119
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5046119,-1.7647352,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>90. TPH 209</name>
+      <description>
+ID: 180571
+KodeTph: NULL
+Coordinates: -1.7647386, 111.504587
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.504587,-1.7647386,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>91. TPH 208</name>
+      <description>
+ID: 180570
+KodeTph: NULL
+Coordinates: -1.7647637, 111.5044066
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5044066,-1.7647637,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>92. TPH 28</name>
+      <description>
+ID: 68081
+KodeTph: NULL
+Coordinates: -1.7648912, 111.503816
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.503816,-1.7648912,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>93. TPH 69</name>
+      <description>
+ID: 68122
+KodeTph: NULL
+Coordinates: -1.764915, 111.5036959
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5036959,-1.764915,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>94. TPH 70</name>
+      <description>
+ID: 68123
+KodeTph: NULL
+Coordinates: -1.7649136, 111.5035468
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5035468,-1.7649136,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>95. TPH 71</name>
+      <description>
+ID: 68124
+KodeTph: NULL
+Coordinates: -1.764928, 111.503404
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.503404,-1.764928,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>96. TPH 72</name>
+      <description>
+ID: 68125
+KodeTph: NULL
+Coordinates: -1.7649335, 111.5032977
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5032977,-1.7649335,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>97. TPH 207</name>
+      <description>
+ID: 180569
+KodeTph: NULL
+Coordinates: -1.7646606, 111.5031204
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5031204,-1.7646606,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>98. TPH 206</name>
+      <description>
+ID: 180568
+KodeTph: NULL
+Coordinates: -1.7645039, 111.5033384
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5033384,-1.7645039,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>99. TPH 205</name>
+      <description>
+ID: 180567
+KodeTph: NULL
+Coordinates: -1.7644809, 111.503377
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.503377,-1.7644809,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>100. TPH 204</name>
+      <description>
+ID: 180566
+KodeTph: NULL
+Coordinates: -1.764412, 111.5034972
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5034972,-1.764412,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>101. TPH 203</name>
+      <description>
+ID: 180565
+KodeTph: NULL
+Coordinates: -1.7643846, 111.5035016
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5035016,-1.7643846,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>102. TPH 202</name>
+      <description>
+ID: 180564
+KodeTph: NULL
+Coordinates: -1.7642371, 111.5038291
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5038291,-1.7642371,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>103. TPH 201</name>
+      <description>
+ID: 180563
+KodeTph: NULL
+Coordinates: -1.7641886, 111.5039116
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5039116,-1.7641886,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>104. TPH 200</name>
+      <description>
+ID: 180562
+KodeTph: NULL
+Coordinates: -1.7641565, 111.5042666
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5042666,-1.7641565,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>105. TPH 199</name>
+      <description>
+ID: 180561
+KodeTph: NULL
+Coordinates: -1.7641308, 111.504366
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.504366,-1.7641308,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>106. TPH 198</name>
+      <description>
+ID: 180560
+KodeTph: NULL
+Coordinates: -1.7641221, 111.5043694
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5043694,-1.7641221,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>107. TPH 197</name>
+      <description>
+ID: 180559
+KodeTph: NULL
+Coordinates: -1.7640119, 111.5046604
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5046604,-1.7640119,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>108. TPH 196</name>
+      <description>
+ID: 180558
+KodeTph: NULL
+Coordinates: -1.7638892, 111.5048266
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5048266,-1.7638892,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>109. TPH 195</name>
+      <description>
+ID: 180557
+KodeTph: NULL
+Coordinates: -1.7638996, 111.504868
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.504868,-1.7638996,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>110. TPH 194</name>
+      <description>
+ID: 180556
+KodeTph: NULL
+Coordinates: -1.7639133, 111.5049836
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5049836,-1.7639133,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>111. TPH 193</name>
+      <description>
+ID: 180555
+KodeTph: NULL
+Coordinates: -1.7638459, 111.5050685
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050685,-1.7638459,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>112. TPH 192</name>
+      <description>
+ID: 180554
+KodeTph: NULL
+Coordinates: -1.7637181, 111.5052146
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5052146,-1.7637181,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>113. TPH 191</name>
+      <description>
+ID: 180553
+KodeTph: NULL
+Coordinates: -1.7635857, 111.5053289
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5053289,-1.7635857,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>114. TPH 190</name>
+      <description>
+ID: 180552
+KodeTph: NULL
+Coordinates: -1.7633108, 111.5054474
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5054474,-1.7633108,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>115. TPH 189</name>
+      <description>
+ID: 180551
+KodeTph: NULL
+Coordinates: -1.7632105, 111.5055199
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055199,-1.7632105,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>116. TPH 188</name>
+      <description>
+ID: 180550
+KodeTph: NULL
+Coordinates: -1.7631452, 111.5055264
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055264,-1.7631452,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>117. TPH 187</name>
+      <description>
+ID: 180549
+KodeTph: NULL
+Coordinates: -1.762908, 111.5055665
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055665,-1.762908,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>118. TPH 186</name>
+      <description>
+ID: 180548
+KodeTph: NULL
+Coordinates: -1.7628773, 111.5056891
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5056891,-1.7628773,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>119. TPH 226</name>
+      <description>
+ID: 180588
+KodeTph: NULL
+Coordinates: -1.7629691, 111.5057393
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5057393,-1.7629691,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>120. TPH 50</name>
+      <description>
+ID: 68103
+KodeTph: NULL
+Coordinates: -1.7630489, 111.5057518
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5057518,-1.7630489,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>121. TPH 51</name>
+      <description>
+ID: 68104
+KodeTph: NULL
+Coordinates: -1.7631941, 111.5058285
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058285,-1.7631941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>122. TPH 52</name>
+      <description>
+ID: 68105
+KodeTph: NULL
+Coordinates: -1.7634438, 111.505817
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.505817,-1.7634438,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>123. TPH 53</name>
+      <description>
+ID: 68106
+KodeTph: NULL
+Coordinates: -1.7634775, 111.5058182
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058182,-1.7634775,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>124. TPH 225</name>
+      <description>
+ID: 180587
+KodeTph: NULL
+Coordinates: -1.7635855, 111.5058106
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058106,-1.7635855,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>125. TPH 224</name>
+      <description>
+ID: 180586
+KodeTph: NULL
+Coordinates: -1.763714, 111.5058805
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058805,-1.763714,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>126. TPH 223</name>
+      <description>
+ID: 180585
+KodeTph: NULL
+Coordinates: -1.7638625, 111.5059996
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5059996,-1.7638625,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>127. TPH 56</name>
+      <description>
+ID: 68109
+KodeTph: NULL
+Coordinates: -1.7639619, 111.506021
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.506021,-1.7639619,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>128. TPH 222</name>
+      <description>
+ID: 180584
+KodeTph: NULL
+Coordinates: -1.7640088, 111.5060357
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5060357,-1.7640088,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>129. TPH 38</name>
+      <description>
+ID: 68091
+KodeTph: NULL
+Coordinates: -1.7644653, 111.5059192
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5059192,-1.7644653,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>130. TPH 37</name>
+      <description>
+ID: 68090
+KodeTph: NULL
+Coordinates: -1.7645437, 111.5058753
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058753,-1.7645437,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>131. TPH 36</name>
+      <description>
+ID: 68089
+KodeTph: NULL
+Coordinates: -1.7646924, 111.5058254
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058254,-1.7646924,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>132. TPH 35</name>
+      <description>
+ID: 68088
+KodeTph: NULL
+Coordinates: -1.7648592, 111.5057238
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5057238,-1.7648592,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>133. TPH 34</name>
+      <description>
+ID: 68087
+KodeTph: NULL
+Coordinates: -1.7648732, 111.5055317
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055317,-1.7648732,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>134. TPH 31</name>
+      <description>
+ID: 68084
+KodeTph: NULL
+Coordinates: -1.7649046, 111.505242
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.505242,-1.7649046,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>135. TPH 30</name>
+      <description>
+ID: 68083
+KodeTph: NULL
+Coordinates: -1.7649003, 111.5051342
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5051342,-1.7649003,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>136. TPH 29</name>
+      <description>
+ID: 68082
+KodeTph: NULL
+Coordinates: -1.7649182, 111.5050037
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050037,-1.7649182,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>137. TPH 41</name>
+      <description>
+ID: 68094
+KodeTph: NULL
+Coordinates: -1.7635019, 111.5039461
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5039461,-1.7635019,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>138. TPH 40</name>
+      <description>
+ID: 68093
+KodeTph: NULL
+Coordinates: -1.7632631, 111.5036935
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5036935,-1.7632631,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>139. TPH 25</name>
+      <description>
+ID: 68078
+KodeTph: NULL
+Coordinates: -1.7632899, 111.502978
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.502978,-1.7632899,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>140. TPH 24</name>
+      <description>
+ID: 68077
+KodeTph: NULL
+Coordinates: -1.7634037, 111.5029333
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5029333,-1.7634037,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>141. TPH 26</name>
+      <description>
+ID: 68079
+KodeTph: NULL
+Coordinates: -1.7629798, 111.5030323
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5030323,-1.7629798,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>142. TPH 247</name>
+      <description>
+ID: 212318
+KodeTph: SMU-PDE-10-D003A247
+Coordinates: -1.7628431, 111.5025704
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025704,-1.7628431,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>143. TPH 245</name>
+      <description>
+ID: 212320
+KodeTph: SMU-PDE-10-D003A245
+Coordinates: -1.7628592, 111.5025507
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025507,-1.7628592,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>144. TPH 246</name>
+      <description>
+ID: 212319
+KodeTph: SMU-PDE-10-D003A246
+Coordinates: -1.7628925, 111.5025103
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025103,-1.7628925,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>145. TPH 244</name>
+      <description>
+ID: 212321
+KodeTph: SMU-PDE-10-D003A244
+Coordinates: -1.7628338, 111.5024238
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5024238,-1.7628338,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>146. TPH 249</name>
+      <description>
+ID: 212316
+KodeTph: SMU-PDE-10-D003A249
+Coordinates: -1.7625821, 111.5027164
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5027164,-1.7625821,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>147. TPH 250</name>
+      <description>
+ID: 212315
+KodeTph: SMU-PDE-10-D003A250
+Coordinates: -1.7625018, 111.5028642
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5028642,-1.7625018,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>148. TPH 251</name>
+      <description>
+ID: 212314
+KodeTph: SMU-PDE-10-D003A251
+Coordinates: -1.7624798, 111.5028827
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5028827,-1.7624798,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>149. TPH 252</name>
+      <description>
+ID: 212313
+KodeTph: SMU-PDE-10-D003A252
+Coordinates: -1.7624458, 111.5028626
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5028626,-1.7624458,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>150. TPH 248</name>
+      <description>
+ID: 212317
+KodeTph: SMU-PDE-10-D003A248
+Coordinates: -1.7624027, 111.5027943
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5027943,-1.7624027,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>151. TPH 230</name>
+      <description>
+ID: 212335
+KodeTph: SMU-PDE-10-D003A230
+Coordinates: -1.7622983, 111.5027677
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5027677,-1.7622983,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>152. TPH 231</name>
+      <description>
+ID: 212334
+KodeTph: SMU-PDE-10-D003A231
+Coordinates: -1.7622889, 111.5025751
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025751,-1.7622889,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>153. TPH 232</name>
+      <description>
+ID: 212333
+KodeTph: SMU-PDE-10-D003A232
+Coordinates: -1.7622216, 111.5025376
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025376,-1.7622216,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>154. TPH 234</name>
+      <description>
+ID: 212331
+KodeTph: SMU-PDE-10-D003A234
+Coordinates: -1.7622216, 111.502213
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.502213,-1.7622216,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>155. TPH 235</name>
+      <description>
+ID: 212330
+KodeTph: SMU-PDE-10-D003A235
+Coordinates: -1.7622205, 111.5022088
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5022088,-1.7622205,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>156. TPH 236</name>
+      <description>
+ID: 212329
+KodeTph: SMU-PDE-10-D003A236
+Coordinates: -1.7622246, 111.5021715
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5021715,-1.7622246,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>157. TPH 233</name>
+      <description>
+ID: 212332
+KodeTph: SMU-PDE-10-D003A233
+Coordinates: -1.7622217, 111.5021551
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5021551,-1.7622217,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>158. TPH 241</name>
+      <description>
+ID: 212324
+KodeTph: SMU-PDE-10-D003A241
+Coordinates: -1.762751, 111.5019447
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5019447,-1.762751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>159. TPH 240</name>
+      <description>
+ID: 212325
+KodeTph: SMU-PDE-10-D003A240
+Coordinates: -1.7627618, 111.5019355
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5019355,-1.7627618,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>160. TPH 239</name>
+      <description>
+ID: 212326
+KodeTph: SMU-PDE-10-D003A239
+Coordinates: -1.7627446, 111.5018786
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5018786,-1.7627446,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>161. TPH 238</name>
+      <description>
+ID: 212327
+KodeTph: SMU-PDE-10-D003A238
+Coordinates: -1.7627731, 111.5018493
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5018493,-1.7627731,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>162. TPH 237</name>
+      <description>
+ID: 212328
+KodeTph: SMU-PDE-10-D003A237
+Coordinates: -1.7628181, 111.5018068
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5018068,-1.7628181,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>163. TPH 242</name>
+      <description>
+ID: 212323
+KodeTph: SMU-PDE-10-D003A242
+Coordinates: -1.7627812, 111.5020026
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5020026,-1.7627812,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>164. TPH 243</name>
+      <description>
+ID: 212322
+KodeTph: SMU-PDE-10-D003A243
+Coordinates: -1.7627868, 111.5020107
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5020107,-1.7627868,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>165. TPH 13</name>
+      <description>
+ID: 68066
+KodeTph: NULL
+Coordinates: -1.7637309, 111.5016844
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5016844,-1.7637309,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>166. TPH 14</name>
+      <description>
+ID: 68067
+KodeTph: NULL
+Coordinates: -1.7644403, 111.5016651
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5016651,-1.7644403,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>167. TPH 15</name>
+      <description>
+ID: 68068
+KodeTph: NULL
+Coordinates: -1.7648724, 111.5016697
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5016697,-1.7648724,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>168. TPH 16</name>
+      <description>
+ID: 68069
+KodeTph: NULL
+Coordinates: -1.7648646, 111.5019115
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5019115,-1.7648646,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>169. TPH 17</name>
+      <description>
+ID: 68070
+KodeTph: NULL
+Coordinates: -1.7648701, 111.5019579
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5019579,-1.7648701,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>170. TPH 18</name>
+      <description>
+ID: 68071
+KodeTph: NULL
+Coordinates: -1.764972, 111.502187
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.502187,-1.764972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>171. TPH 19</name>
+      <description>
+ID: 68072
+KodeTph: NULL
+Coordinates: -1.7650277, 111.5022304
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5022304,-1.7650277,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>172. TPH 20</name>
+      <description>
+ID: 68073
+KodeTph: NULL
+Coordinates: -1.7654589, 111.5023414
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5023414,-1.7654589,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>173. TPH 21</name>
+      <description>
+ID: 68074
+KodeTph: NULL
+Coordinates: -1.7656078, 111.5023791
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5023791,-1.7656078,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>174. TPH 22</name>
+      <description>
+ID: 68075
+KodeTph: NULL
+Coordinates: -1.7656793, 111.5024441
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5024441,-1.7656793,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>175. TPH 23</name>
+      <description>
+ID: 68076
+KodeTph: NULL
+Coordinates: -1.7657351, 111.5025695
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5025695,-1.7657351,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>176. TPH 27</name>
+      <description>
+ID: 68080
+KodeTph: NULL
+Coordinates: -1.7650553, 111.5029349
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5029349,-1.7650553,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>177. TPH 45</name>
+      <description>
+ID: 68098
+KodeTph: NULL
+Coordinates: -1.7629766, 111.5047252
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5047252,-1.7629766,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>178. TPH 46</name>
+      <description>
+ID: 68099
+KodeTph: NULL
+Coordinates: -1.7628824, 111.5048697
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5048697,-1.7628824,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>179. TPH 47</name>
+      <description>
+ID: 68100
+KodeTph: NULL
+Coordinates: -1.7627029, 111.5051742
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5051742,-1.7627029,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>180. TPH 48</name>
+      <description>
+ID: 68101
+KodeTph: NULL
+Coordinates: -1.7626768, 111.5055689
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5055689,-1.7626768,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>181. TPH 49</name>
+      <description>
+ID: 68102
+KodeTph: NULL
+Coordinates: -1.7627654, 111.5058471
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5058471,-1.7627654,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>182. TPH 260</name>
+      <description>
+ID: 212305
+KodeTph: SMU-PDE-10-D003A260
+Coordinates: -1.7624558, 111.5065697
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5065697,-1.7624558,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>183. TPH 87</name>
+      <description>
+ID: 164680
+KodeTph: None
+Coordinates: -1.7623162, 111.5066033
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5066033,-1.7623162,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>184. TPH 86</name>
+      <description>
+ID: 164679
+KodeTph: None
+Coordinates: -1.7625296, 111.5067083
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5067083,-1.7625296,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>185. TPH 61</name>
+      <description>
+ID: 68114
+KodeTph: NULL
+Coordinates: -1.7626017, 111.5067031
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5067031,-1.7626017,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>186. TPH 85</name>
+      <description>
+ID: 164678
+KodeTph: None
+Coordinates: -1.7626431, 111.506676
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.506676,-1.7626431,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>187. TPH 84</name>
+      <description>
+ID: 164677
+KodeTph: None
+Coordinates: -1.7627203, 111.5066866
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5066866,-1.7627203,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>188. TPH 83</name>
+      <description>
+ID: 164676
+KodeTph: None
+Coordinates: -1.7628853, 111.506818
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.506818,-1.7628853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>189. TPH 82</name>
+      <description>
+ID: 164675
+KodeTph: None
+Coordinates: -1.7629369, 111.5068099
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5068099,-1.7629369,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>190. TPH 81</name>
+      <description>
+ID: 164674
+KodeTph: None
+Coordinates: -1.7631257, 111.5068929
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5068929,-1.7631257,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>191. TPH 221</name>
+      <description>
+ID: 180583
+KodeTph: NULL
+Coordinates: -1.7631294, 111.5066975
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5066975,-1.7631294,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>192. TPH 80</name>
+      <description>
+ID: 164673
+KodeTph: None
+Coordinates: -1.7633101, 111.5069667
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5069667,-1.7633101,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>193. TPH 79</name>
+      <description>
+ID: 164672
+KodeTph: None
+Coordinates: -1.7637834, 111.5070349
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5070349,-1.7637834,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>194. TPH 78</name>
+      <description>
+ID: 164671
+KodeTph: None
+Coordinates: -1.763818, 111.5069597
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5069597,-1.763818,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>195. TPH 227</name>
+      <description>
+ID: 212338
+KodeTph: SMU-PDE-10-D003A227
+Coordinates: -1.7635056, 111.5064475
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5064475,-1.7635056,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>196. TPH 228</name>
+      <description>
+ID: 212337
+KodeTph: SMU-PDE-10-D003A228
+Coordinates: -1.7635166, 111.5064359
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5064359,-1.7635166,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>197. TPH 98</name>
+      <description>
+ID: 164691
+KodeTph: None
+Coordinates: -1.7635051, 111.5075876
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5075876,-1.7635051,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>198. TPH 99</name>
+      <description>
+ID: 164692
+KodeTph: None
+Coordinates: -1.7637724, 111.5076184
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076184,-1.7637724,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>199. TPH 100</name>
+      <description>
+ID: 164693
+KodeTph: None
+Coordinates: -1.7638708, 111.5076179
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076179,-1.7638708,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>200. TPH 97</name>
+      <description>
+ID: 164690
+KodeTph: None
+Coordinates: -1.7631892, 111.5076236
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076236,-1.7631892,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>201. TPH 96</name>
+      <description>
+ID: 164689
+KodeTph: None
+Coordinates: -1.7631669, 111.5076358
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076358,-1.7631669,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>202. TPH 95</name>
+      <description>
+ID: 164688
+KodeTph: None
+Coordinates: -1.7629091, 111.5076192
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076192,-1.7629091,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>203. TPH 94</name>
+      <description>
+ID: 164687
+KodeTph: None
+Coordinates: -1.7626369, 111.5075738
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5075738,-1.7626369,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>204. TPH 93</name>
+      <description>
+ID: 164686
+KodeTph: None
+Coordinates: -1.7625346, 111.5076144
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5076144,-1.7625346,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>205. TPH 92</name>
+      <description>
+ID: 164685
+KodeTph: None
+Coordinates: -1.7624401, 111.5077136
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5077136,-1.7624401,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>206. TPH 91</name>
+      <description>
+ID: 164684
+KodeTph: None
+Coordinates: -1.7624619, 111.5077935
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5077935,-1.7624619,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>207. TPH 140</name>
+      <description>
+ID: 180502
+KodeTph: NULL
+Coordinates: -1.7623609, 111.5079517
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5079517,-1.7623609,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>208. TPH 139</name>
+      <description>
+ID: 164732
+KodeTph: None
+Coordinates: -1.7622549, 111.507952
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.507952,-1.7622549,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>209. TPH 90</name>
+      <description>
+ID: 164683
+KodeTph: None
+Coordinates: -1.7624039, 111.5075203
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5075203,-1.7624039,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>210. TPH 89</name>
+      <description>
+ID: 164682
+KodeTph: None
+Coordinates: -1.7623666, 111.5073365
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5073365,-1.7623666,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>211. TPH 88</name>
+      <description>
+ID: 164681
+KodeTph: None
+Coordinates: -1.762352, 111.5071348
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5071348,-1.762352,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>212. TPH 138</name>
+      <description>
+ID: 164731
+KodeTph: None
+Coordinates: -1.7623221, 111.5085376
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5085376,-1.7623221,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>213. TPH 137</name>
+      <description>
+ID: 164730
+KodeTph: None
+Coordinates: -1.7623539, 111.508711
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.508711,-1.7623539,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>214. TPH 136</name>
+      <description>
+ID: 164729
+KodeTph: None
+Coordinates: -1.762339, 111.508979
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.508979,-1.762339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>215. TPH 135</name>
+      <description>
+ID: 164728
+KodeTph: None
+Coordinates: -1.7623643, 111.5091058
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091058,-1.7623643,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>216. TPH 134</name>
+      <description>
+ID: 164727
+KodeTph: None
+Coordinates: -1.7624048, 111.5091173
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5091173,-1.7624048,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>217. TPH 141</name>
+      <description>
+ID: 180503
+KodeTph: NULL
+Coordinates: -1.762353, 111.5093305
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093305,-1.762353,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>218. TPH 142</name>
+      <description>
+ID: 180504
+KodeTph: NULL
+Coordinates: -1.7623368, 111.5093639
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5093639,-1.7623368,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>219. TPH 143</name>
+      <description>
+ID: 180505
+KodeTph: NULL
+Coordinates: -1.7623425, 111.5094335
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5094335,-1.7623425,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>220. TPH 144</name>
+      <description>
+ID: 180506
+KodeTph: NULL
+Coordinates: -1.7623385, 111.5094741
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5094741,-1.7623385,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>221. TPH 145</name>
+      <description>
+ID: 180507
+KodeTph: NULL
+Coordinates: -1.7623552, 111.5095855
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5095855,-1.7623552,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>222. TPH 146</name>
+      <description>
+ID: 180508
+KodeTph: NULL
+Coordinates: -1.7623705, 111.50964
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.50964,-1.7623705,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>223. TPH 147</name>
+      <description>
+ID: 180509
+KodeTph: NULL
+Coordinates: -1.7623506, 111.5097429
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097429,-1.7623506,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>224. TPH 128</name>
+      <description>
+ID: 164721
+KodeTph: None
+Coordinates: -1.7625912, 111.5098877
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5098877,-1.7625912,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>225. TPH 129</name>
+      <description>
+ID: 164722
+KodeTph: None
+Coordinates: -1.7626804, 111.5097549
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097549,-1.7626804,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>226. TPH 130</name>
+      <description>
+ID: 164723
+KodeTph: None
+Coordinates: -1.7627259, 111.5097155
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5097155,-1.7627259,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>227. TPH 131</name>
+      <description>
+ID: 164724
+KodeTph: None
+Coordinates: -1.7627838, 111.5096639
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5096639,-1.7627838,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>228. TPH 132</name>
+      <description>
+ID: 164725
+KodeTph: None
+Coordinates: -1.762849, 111.5095856
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5095856,-1.762849,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>229. TPH 133</name>
+      <description>
+ID: 164726
+KodeTph: None
+Coordinates: -1.7629227, 111.5094989
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5094989,-1.7629227,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>230. TPH 127</name>
+      <description>
+ID: 164720
+KodeTph: None
+Coordinates: -1.7627363, 111.5101483
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5101483,-1.7627363,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>231. TPH 149</name>
+      <description>
+ID: 180511
+KodeTph: NULL
+Coordinates: -1.7623443, 111.5102673
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5102673,-1.7623443,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>232. TPH 148</name>
+      <description>
+ID: 180510
+KodeTph: NULL
+Coordinates: -1.7623239, 111.5101659
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5101659,-1.7623239,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>233. TPH 150</name>
+      <description>
+ID: 180512
+KodeTph: NULL
+Coordinates: -1.7623342, 111.5103898
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5103898,-1.7623342,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>234. TPH 151</name>
+      <description>
+ID: 180513
+KodeTph: NULL
+Coordinates: -1.7623367, 111.5104326
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5104326,-1.7623367,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>235. TPH 152</name>
+      <description>
+ID: 180514
+KodeTph: NULL
+Coordinates: -1.762296, 111.5105476
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5105476,-1.762296,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>236. TPH 153</name>
+      <description>
+ID: 180515
+KodeTph: NULL
+Coordinates: -1.76256, 111.5108119
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5108119,-1.76256,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>237. TPH 154</name>
+      <description>
+ID: 180516
+KodeTph: NULL
+Coordinates: -1.7626562, 111.5108267
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5108267,-1.7626562,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>238. TPH 155</name>
+      <description>
+ID: 180517
+KodeTph: NULL
+Coordinates: -1.7630161, 111.5107731
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5107731,-1.7630161,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>239. TPH 156</name>
+      <description>
+ID: 180518
+KodeTph: NULL
+Coordinates: -1.7630492, 111.5107616
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5107616,-1.7630492,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>240. TPH 157</name>
+      <description>
+ID: 180519
+KodeTph: NULL
+Coordinates: -1.7633384, 111.5105686
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5105686,-1.7633384,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>241. TPH 259</name>
+      <description>
+ID: 212306
+KodeTph: SMU-PDE-10-D003A259
+Coordinates: -1.7622216, 111.5050358
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5050358,-1.7622216,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>242. TPH 258</name>
+      <description>
+ID: 212307
+KodeTph: SMU-PDE-10-D003A258
+Coordinates: -1.7623413, 111.5047314
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5047314,-1.7623413,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>243. TPH 33</name>
+      <description>
+ID: 68086
+KodeTph: NULL
+Coordinates: -1.7623514, 111.5045094
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5045094,-1.7623514,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>244. TPH 257</name>
+      <description>
+ID: 212308
+KodeTph: SMU-PDE-10-D003A257
+Coordinates: -1.7622909, 111.5042951
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5042951,-1.7622909,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>245. TPH 256</name>
+      <description>
+ID: 212309
+KodeTph: SMU-PDE-10-D003A256
+Coordinates: -1.7623053, 111.5041043
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5041043,-1.7623053,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>246. TPH 32</name>
+      <description>
+ID: 68085
+KodeTph: NULL
+Coordinates: -1.7622508, 111.5040083
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5040083,-1.7622508,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>247. TPH 229</name>
+      <description>
+ID: 212336
+KodeTph: SMU-PDE-10-D003A229
+Coordinates: -1.7621982, 111.5037349
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5037349,-1.7621982,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>248. TPH 255</name>
+      <description>
+ID: 212310
+KodeTph: SMU-PDE-10-D003A255
+Coordinates: -1.7621747, 111.5034153
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5034153,-1.7621747,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>249. TPH 254</name>
+      <description>
+ID: 212311
+KodeTph: SMU-PDE-10-D003A254
+Coordinates: -1.7621905, 111.5033905
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5033905,-1.7621905,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>250. TPH 253</name>
+      <description>
+ID: 212312
+KodeTph: SMU-PDE-10-D003A253
+Coordinates: -1.7622301, 111.5030573
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>111.5030573,-1.7622301,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TPH Route</name>
+      <description>Optimized route through all TPH points</description>
+      <styleUrl>#pathStyle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          111.5097053,-1.7642041,0
+          111.5097144,-1.764237,0
+          111.5097049,-1.7642474,0
+          111.5096737,-1.7642207,0
+          111.509676,-1.7642879,0
+          111.5095307,-1.7643588,0
+          111.5094327,-1.7645321,0
+          111.5094181,-1.7645541,0
+          111.5093741,-1.7646426,0
+          111.5093398,-1.764635,0
+          111.5093004,-1.7646967,0
+          111.5092622,-1.764777,0
+          111.5092222,-1.7649069,0
+          111.5091942,-1.7649353,0
+          111.5091821,-1.7649466,0
+          111.5095479,-1.765041,0
+          111.5096143,-1.7650336,0
+          111.5097365,-1.7649953,0
+          111.5101015,-1.7647528,0
+          111.5101547,-1.7647457,0
+          111.5103134,-1.7646118,0
+          111.5103465,-1.7645035,0
+          111.510338,-1.7644951,0
+          111.5103665,-1.7643356,0
+          111.5099174,-1.7639225,0
+          111.5099153,-1.7639026,0
+          111.5098426,-1.7639685,0
+          111.5097411,-1.7640798,0
+          111.5100346,-1.7638204,0
+          111.5101186,-1.7637541,0
+          111.5100557,-1.7631855,0
+          111.5100282,-1.7631631,0
+          111.5097415,-1.7632768,0
+          111.5095893,-1.7633473,0
+          111.5093747,-1.7633549,0
+          111.5093352,-1.7633713,0
+          111.5091171,-1.7636794,0
+          111.5091558,-1.7637245,0
+          111.5091916,-1.7637861,0
+          111.5091692,-1.7638242,0
+          111.5090269,-1.7636059,0
+          111.5088916,-1.7634795,0
+          111.5088518,-1.7634616,0
+          111.508923,-1.7640381,0
+          111.5087784,-1.7640816,0
+          111.5087342,-1.764121,0
+          111.5085676,-1.7645872,0
+          111.5085691,-1.7646132,0
+          111.5085374,-1.7648977,0
+          111.508271,-1.7651782,0
+          111.5083037,-1.7652442,0
+          111.5081666,-1.7651253,0
+          111.5079159,-1.7650781,0
+          111.5078235,-1.7650067,0
+          111.5077892,-1.7649908,0
+          111.5078071,-1.7649688,0
+          111.5077823,-1.7649561,0
+          111.507735,-1.7648162,0
+          111.5077219,-1.7648152,0
+          111.5070711,-1.7643206,0
+          111.5070418,-1.7641982,0
+          111.5068402,-1.7642757,0
+          111.5068158,-1.7642611,0
+          111.5068546,-1.7643334,0
+          111.5069908,-1.7644229,0
+          111.5065612,-1.7641852,0
+          111.5064626,-1.7641416,0
+          111.5062827,-1.7642569,0
+          111.5060239,-1.7642844,0
+          111.5059923,-1.7642647,0
+          111.5058941,-1.7640894,0
+          111.5057885,-1.7641959,0
+          111.505782,-1.7641946,0
+          111.5057815,-1.7642288,0
+          111.5056044,-1.7643273,0
+          111.5055406,-1.7643446,0
+          111.505492,-1.7643572,0
+          111.5053797,-1.7644035,0
+          111.5053867,-1.7644179,0
+          111.5053032,-1.7644335,0
+          111.5052223,-1.7644571,0
+          111.505195,-1.7644505,0
+          111.5050992,-1.7644818,0
+          111.5050414,-1.7645065,0
+          111.5050107,-1.7645216,0
+          111.5048634,-1.764601,0
+          111.504842,-1.7646227,0
+          111.504715,-1.7646868,0
+          111.5046119,-1.7647352,0
+          111.504587,-1.7647386,0
+          111.5044066,-1.7647637,0
+          111.503816,-1.7648912,0
+          111.5036959,-1.764915,0
+          111.5035468,-1.7649136,0
+          111.503404,-1.764928,0
+          111.5032977,-1.7649335,0
+          111.5031204,-1.7646606,0
+          111.5033384,-1.7645039,0
+          111.503377,-1.7644809,0
+          111.5034972,-1.764412,0
+          111.5035016,-1.7643846,0
+          111.5038291,-1.7642371,0
+          111.5039116,-1.7641886,0
+          111.5042666,-1.7641565,0
+          111.504366,-1.7641308,0
+          111.5043694,-1.7641221,0
+          111.5046604,-1.7640119,0
+          111.5048266,-1.7638892,0
+          111.504868,-1.7638996,0
+          111.5049836,-1.7639133,0
+          111.5050685,-1.7638459,0
+          111.5052146,-1.7637181,0
+          111.5053289,-1.7635857,0
+          111.5054474,-1.7633108,0
+          111.5055199,-1.7632105,0
+          111.5055264,-1.7631452,0
+          111.5055665,-1.762908,0
+          111.5056891,-1.7628773,0
+          111.5057393,-1.7629691,0
+          111.5057518,-1.7630489,0
+          111.5058285,-1.7631941,0
+          111.505817,-1.7634438,0
+          111.5058182,-1.7634775,0
+          111.5058106,-1.7635855,0
+          111.5058805,-1.763714,0
+          111.5059996,-1.7638625,0
+          111.506021,-1.7639619,0
+          111.5060357,-1.7640088,0
+          111.5059192,-1.7644653,0
+          111.5058753,-1.7645437,0
+          111.5058254,-1.7646924,0
+          111.5057238,-1.7648592,0
+          111.5055317,-1.7648732,0
+          111.505242,-1.7649046,0
+          111.5051342,-1.7649003,0
+          111.5050037,-1.7649182,0
+          111.5039461,-1.7635019,0
+          111.5036935,-1.7632631,0
+          111.502978,-1.7632899,0
+          111.5029333,-1.7634037,0
+          111.5030323,-1.7629798,0
+          111.5025704,-1.7628431,0
+          111.5025507,-1.7628592,0
+          111.5025103,-1.7628925,0
+          111.5024238,-1.7628338,0
+          111.5027164,-1.7625821,0
+          111.5028642,-1.7625018,0
+          111.5028827,-1.7624798,0
+          111.5028626,-1.7624458,0
+          111.5027943,-1.7624027,0
+          111.5027677,-1.7622983,0
+          111.5025751,-1.7622889,0
+          111.5025376,-1.7622216,0
+          111.502213,-1.7622216,0
+          111.5022088,-1.7622205,0
+          111.5021715,-1.7622246,0
+          111.5021551,-1.7622217,0
+          111.5019447,-1.762751,0
+          111.5019355,-1.7627618,0
+          111.5018786,-1.7627446,0
+          111.5018493,-1.7627731,0
+          111.5018068,-1.7628181,0
+          111.5020026,-1.7627812,0
+          111.5020107,-1.7627868,0
+          111.5016844,-1.7637309,0
+          111.5016651,-1.7644403,0
+          111.5016697,-1.7648724,0
+          111.5019115,-1.7648646,0
+          111.5019579,-1.7648701,0
+          111.502187,-1.764972,0
+          111.5022304,-1.7650277,0
+          111.5023414,-1.7654589,0
+          111.5023791,-1.7656078,0
+          111.5024441,-1.7656793,0
+          111.5025695,-1.7657351,0
+          111.5029349,-1.7650553,0
+          111.5047252,-1.7629766,0
+          111.5048697,-1.7628824,0
+          111.5051742,-1.7627029,0
+          111.5055689,-1.7626768,0
+          111.5058471,-1.7627654,0
+          111.5065697,-1.7624558,0
+          111.5066033,-1.7623162,0
+          111.5067083,-1.7625296,0
+          111.5067031,-1.7626017,0
+          111.506676,-1.7626431,0
+          111.5066866,-1.7627203,0
+          111.506818,-1.7628853,0
+          111.5068099,-1.7629369,0
+          111.5068929,-1.7631257,0
+          111.5066975,-1.7631294,0
+          111.5069667,-1.7633101,0
+          111.5070349,-1.7637834,0
+          111.5069597,-1.763818,0
+          111.5064475,-1.7635056,0
+          111.5064359,-1.7635166,0
+          111.5075876,-1.7635051,0
+          111.5076184,-1.7637724,0
+          111.5076179,-1.7638708,0
+          111.5076236,-1.7631892,0
+          111.5076358,-1.7631669,0
+          111.5076192,-1.7629091,0
+          111.5075738,-1.7626369,0
+          111.5076144,-1.7625346,0
+          111.5077136,-1.7624401,0
+          111.5077935,-1.7624619,0
+          111.5079517,-1.7623609,0
+          111.507952,-1.7622549,0
+          111.5075203,-1.7624039,0
+          111.5073365,-1.7623666,0
+          111.5071348,-1.762352,0
+          111.5085376,-1.7623221,0
+          111.508711,-1.7623539,0
+          111.508979,-1.762339,0
+          111.5091058,-1.7623643,0
+          111.5091173,-1.7624048,0
+          111.5093305,-1.762353,0
+          111.5093639,-1.7623368,0
+          111.5094335,-1.7623425,0
+          111.5094741,-1.7623385,0
+          111.5095855,-1.7623552,0
+          111.50964,-1.7623705,0
+          111.5097429,-1.7623506,0
+          111.5098877,-1.7625912,0
+          111.5097549,-1.7626804,0
+          111.5097155,-1.7627259,0
+          111.5096639,-1.7627838,0
+          111.5095856,-1.762849,0
+          111.5094989,-1.7629227,0
+          111.5101483,-1.7627363,0
+          111.5102673,-1.7623443,0
+          111.5101659,-1.7623239,0
+          111.5103898,-1.7623342,0
+          111.5104326,-1.7623367,0
+          111.5105476,-1.762296,0
+          111.5108119,-1.76256,0
+          111.5108267,-1.7626562,0
+          111.5107731,-1.7630161,0
+          111.5107616,-1.7630492,0
+          111.5105686,-1.7633384,0
+          111.5050358,-1.7622216,0
+          111.5047314,-1.7623413,0
+          111.5045094,-1.7623514,0
+          111.5042951,-1.7622909,0
+          111.5041043,-1.7623053,0
+          111.5040083,-1.7622508,0
+          111.5037349,-1.7621982,0
+          111.5034153,-1.7621747,0
+          111.5033905,-1.7621905,0
+          111.5030573,-1.7622301,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

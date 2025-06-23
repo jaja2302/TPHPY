@@ -82,16 +82,16 @@ async def get_tph_data(dept_abbr: Optional[str] = None,
     if dept_abbr:
         query += " AND dept_abbr = %s"
         params.append(dept_abbr)
-    
+        
     if divisi_abbr:
-        query += " AND divisi_abbr = %s"
-        params.append(divisi_abbr)
+        query += " AND divisi_abbr LIKE %s"
+        params.append(f"%{divisi_abbr}%")
     
     if blok_kode:
-        query += " AND blok_kode = %s"
-        params.append(blok_kode)
+        query += " AND blok_kode LIKE %s"
+        params.append(f"%{blok_kode}%")
     
-    query += " ORDER BY id"
+    query += " ORDER BY nomor ASC"
     
     results = await execute_query(query, params)
     

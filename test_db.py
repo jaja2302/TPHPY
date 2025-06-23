@@ -44,7 +44,9 @@ async def test_simple():
                       f"Blok: {row.get('blok_kode', 'N/A')} | "
                       f"Lat: {row.get('lat', 'N/A')} | "
                       f"Lon: {row.get('lon', 'N/A')} | "
+                      f"Update Date: {row.get('update_date', 'N/A')} | "
                       f"TPH: {row.get('kode_tph', 'N/A')}")
+                
             
             if len(results) > 10:
                 print(f"... and {len(results) - 10} more records")
