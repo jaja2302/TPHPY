@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>TPH Route - BDE AFD-OB M022B</name>
+    <description>Optimized TPH Route using Nearest Neighbor Algorithm</description>
+    <Style id="tphStyle">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="pathStyle">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Placemark>
+      <name>1. TPH 2</name>
+      <description>
+ID: 127255
+KodeTph: MKM-BDE-12-M0221
+Coordinates: -3.027944, 114.2329558
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329558,-3.027944,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2. TPH 3</name>
+      <description>
+ID: 127316
+KodeTph: MKM-BDE-16-M022A20
+Coordinates: -3.0278608, 114.2329422
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329422,-3.0278608,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3. TPH 47</name>
+      <description>
+ID: 127256
+KodeTph: MKM-BDE-12-M0222
+Coordinates: -3.028185, 114.2329592
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329592,-3.028185,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4. TPH 61</name>
+      <description>
+ID: 127257
+KodeTph: MKM-BDE-12-M0223
+Coordinates: -3.0285821, 114.2329547
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329547,-3.0285821,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>5. TPH 60</name>
+      <description>
+ID: 127258
+KodeTph: MKM-BDE-12-M0224
+Coordinates: -3.0287681, 114.232968
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.232968,-3.0287681,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>6. TPH 59</name>
+      <description>
+ID: 127259
+KodeTph: MKM-BDE-12-M0225
+Coordinates: -3.0291651, 114.2329449
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329449,-3.0291651,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7. TPH 58</name>
+      <description>
+ID: 127260
+KodeTph: MKM-BDE-12-M0226
+Coordinates: -3.0294596, 114.2329396
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329396,-3.0294596,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8. TPH 57</name>
+      <description>
+ID: 127261
+KodeTph: MKM-BDE-12-M0227
+Coordinates: -3.029588, 114.2329495
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329495,-3.029588,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9. TPH 56</name>
+      <description>
+ID: 127262
+KodeTph: MKM-BDE-12-M0228
+Coordinates: -3.0299081, 114.2329495
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329495,-3.0299081,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10. TPH 55</name>
+      <description>
+ID: 127263
+KodeTph: MKM-BDE-12-M0229
+Coordinates: -3.0303231, 114.2329282
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329282,-3.0303231,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11. TPH 54</name>
+      <description>
+ID: 127264
+KodeTph: MKM-BDE-12-M02210
+Coordinates: -3.0305855, 114.2329357
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329357,-3.0305855,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>12. TPH 53</name>
+      <description>
+ID: 127265
+KodeTph: MKM-BDE-12-M02211
+Coordinates: -3.030839, 114.2329101
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329101,-3.030839,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>13. TPH 52</name>
+      <description>
+ID: 127266
+KodeTph: MKM-BDE-12-M02212
+Coordinates: -3.0311579, 114.232885
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.232885,-3.0311579,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>14. TPH 51</name>
+      <description>
+ID: 127267
+KodeTph: MKM-BDE-12-M02213
+Coordinates: -3.0313558, 114.2329127
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329127,-3.0313558,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>15. TPH 50</name>
+      <description>
+ID: 127268
+KodeTph: MKM-BDE-12-M02214
+Coordinates: -3.0313748, 114.2328772
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2328772,-3.0313748,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>16. TPH 48</name>
+      <description>
+ID: 127269
+KodeTph: MKM-BDE-12-M02215
+Coordinates: -3.0318928, 114.2328927
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2328927,-3.0318928,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>17. TPH 49</name>
+      <description>
+ID: 127270
+KodeTph: MKM-BDE-12-M02216
+Coordinates: -3.0319983, 114.2329116
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329116,-3.0319983,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>18. TPH 62</name>
+      <description>
+ID: 127271
+KodeTph: MKM-BDE-12-M02217
+Coordinates: -3.0345194, 114.2328677
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2328677,-3.0345194,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>19. TPH 1</name>
+      <description>
+ID: 127317
+KodeTph: MKM-BDE-16-M022A21
+Coordinates: -3.0322298, 114.2301933
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301933,-3.0322298,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>20. TPH 46</name>
+      <description>
+ID: 127338
+KodeTph: MKM-BDE-16-M022A42
+Coordinates: -3.0321298, 114.2301794
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301794,-3.0321298,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>21. TPH 45</name>
+      <description>
+ID: 127319
+KodeTph: MKM-BDE-16-M022A23
+Coordinates: -3.0320864, 114.2301796
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301796,-3.0320864,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>22. TPH 44</name>
+      <description>
+ID: 127318
+KodeTph: MKM-BDE-16-M022A22
+Coordinates: -3.0316943, 114.2301943
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301943,-3.0316943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23. TPH 43</name>
+      <description>
+ID: 127337
+KodeTph: MKM-BDE-16-M022A41
+Coordinates: -3.0316938, 114.2301825
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301825,-3.0316938,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>24. TPH 42</name>
+      <description>
+ID: 127336
+KodeTph: MKM-BDE-16-M022A40
+Coordinates: -3.0314959, 114.2301749
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301749,-3.0314959,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25. TPH 41</name>
+      <description>
+ID: 127320
+KodeTph: MKM-BDE-16-M022A24
+Coordinates: -3.0313019, 114.2301831
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301831,-3.0313019,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>26. TPH 40</name>
+      <description>
+ID: 127334
+KodeTph: MKM-BDE-16-M022A38
+Coordinates: -3.0310406, 114.2302089
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302089,-3.0310406,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>27. TPH 39</name>
+      <description>
+ID: 127321
+KodeTph: MKM-BDE-16-M022A25
+Coordinates: -3.0309029, 114.2302046
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302046,-3.0309029,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>28. TPH 38</name>
+      <description>
+ID: 127335
+KodeTph: MKM-BDE-16-M022A39
+Coordinates: -3.0308174, 114.2302375
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302375,-3.0308174,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>29. TPH 37</name>
+      <description>
+ID: 127322
+KodeTph: MKM-BDE-16-M022A26
+Coordinates: -3.0305033, 114.2301938
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301938,-3.0305033,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>30. TPH 36</name>
+      <description>
+ID: 127323
+KodeTph: MKM-BDE-16-M022A27
+Coordinates: -3.0300838, 114.2301985
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301985,-3.0300838,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>31. TPH 35</name>
+      <description>
+ID: 127333
+KodeTph: MKM-BDE-16-M022A37
+Coordinates: -3.0300362, 114.2302046
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302046,-3.0300362,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>32. TPH 34</name>
+      <description>
+ID: 127324
+KodeTph: MKM-BDE-16-M022A28
+Coordinates: -3.0296, 114.2301913
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2301913,-3.0296,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33. TPH 33</name>
+      <description>
+ID: 127332
+KodeTph: MKM-BDE-16-M022A36
+Coordinates: -3.0295953, 114.2302741
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302741,-3.0295953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>34. TPH 32</name>
+      <description>
+ID: 127331
+KodeTph: MKM-BDE-16-M022A35
+Coordinates: -3.0293699, 114.2302558
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302558,-3.0293699,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>35. TPH 31</name>
+      <description>
+ID: 127325
+KodeTph: MKM-BDE-16-M022A29
+Coordinates: -3.0292218, 114.2302123
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302123,-3.0292218,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>36. TPH 30</name>
+      <description>
+ID: 127330
+KodeTph: MKM-BDE-16-M022A34
+Coordinates: -3.0287443, 114.2302458
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302458,-3.0287443,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>37. TPH 29</name>
+      <description>
+ID: 127329
+KodeTph: MKM-BDE-16-M022A33
+Coordinates: -3.0282827, 114.2302378
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302378,-3.0282827,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>38. TPH 28</name>
+      <description>
+ID: 127328
+KodeTph: MKM-BDE-16-M022A32
+Coordinates: -3.028029, 114.2302379
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302379,-3.028029,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>39. TPH 27</name>
+      <description>
+ID: 127306
+KodeTph: MKM-BDE-12-M02250
+Coordinates: -3.0278241, 114.2302454
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302454,-3.0278241,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40. TPH 26</name>
+      <description>
+ID: 127305
+KodeTph: MKM-BDE-12-M02251
+Coordinates: -3.0274306, 114.2302523
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302523,-3.0274306,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>41. TPH 25</name>
+      <description>
+ID: 127304
+KodeTph: MKM-BDE-12-M02252
+Coordinates: -3.026999, 114.2302583
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302583,-3.026999,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>42. TPH 24</name>
+      <description>
+ID: 127303
+KodeTph: MKM-BDE-12-M02253
+Coordinates: -3.026588, 114.2302588
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302588,-3.026588,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>43. TPH 23</name>
+      <description>
+ID: 127302
+KodeTph: MKM-BDE-12-M02254
+Coordinates: -3.0260828, 114.2302656
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302656,-3.0260828,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>44. TPH 22</name>
+      <description>
+ID: 128098
+KodeTph: MKM-BDE-12-M02263
+Coordinates: -3.0257072, 114.2302612
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302612,-3.0257072,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>45. TPH 21</name>
+      <description>
+ID: 128097
+KodeTph: MKM-BDE-12-M02264
+Coordinates: -3.0252918, 114.2302521
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302521,-3.0252918,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>46. TPH 20</name>
+      <description>
+ID: 127300
+KodeTph: MKM-BDE-12-M02256
+Coordinates: -3.0248736, 114.2302584
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302584,-3.0248736,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>47. TPH 19</name>
+      <description>
+ID: 127299
+KodeTph: MKM-BDE-12-M02257
+Coordinates: -3.0244745, 114.2302592
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302592,-3.0244745,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>48. TPH 18</name>
+      <description>
+ID: 127298
+KodeTph: MKM-BDE-12-M02258
+Coordinates: -3.0240461, 114.23027
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.23027,-3.0240461,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>49. TPH 17</name>
+      <description>
+ID: 127297
+KodeTph: MKM-BDE-12-M02259
+Coordinates: -3.0236336, 114.2302715
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2302715,-3.0236336,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50. TPH 16</name>
+      <description>
+ID: 127301
+KodeTph: MKM-BDE-12-M02255
+Coordinates: -3.023435, 114.231718
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.231718,-3.023435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>51. TPH 15</name>
+      <description>
+ID: 127307
+KodeTph: MKM-BDE-12-M02249
+Coordinates: -3.0236358, 114.2330073
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2330073,-3.0236358,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>52. TPH 14</name>
+      <description>
+ID: 127308
+KodeTph: MKM-BDE-12-M02248
+Coordinates: -3.0240678, 114.2329964
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329964,-3.0240678,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>53. TPH 13</name>
+      <description>
+ID: 127309
+KodeTph: MKM-BDE-12-M02247
+Coordinates: -3.024484, 114.2329944
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329944,-3.024484,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54. TPH 12</name>
+      <description>
+ID: 127310
+KodeTph: MKM-BDE-12-M02246
+Coordinates: -3.0249382, 114.2329704
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329704,-3.0249382,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>55. TPH 11</name>
+      <description>
+ID: 128100
+KodeTph: MKM-BDE-12-M02261
+Coordinates: -3.0253263, 114.2329697
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329697,-3.0253263,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>56. TPH 10</name>
+      <description>
+ID: 128099
+KodeTph: MKM-BDE-12-M02262
+Coordinates: -3.0256362, 114.2329918
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329918,-3.0256362,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57. TPH 9</name>
+      <description>
+ID: 128101
+KodeTph: MKM-BDE-12-M02260
+Coordinates: -3.0257883, 114.2329585
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329585,-3.0257883,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>58. TPH 8</name>
+      <description>
+ID: 127311
+KodeTph: MKM-BDE-12-M02245
+Coordinates: -3.0260424, 114.2329954
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329954,-3.0260424,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59. TPH 7</name>
+      <description>
+ID: 127312
+KodeTph: MKM-BDE-12-M02244
+Coordinates: -3.0262703, 114.2329844
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329844,-3.0262703,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>60. TPH 6</name>
+      <description>
+ID: 127313
+KodeTph: MKM-BDE-12-M02243
+Coordinates: -3.0266314, 114.232969
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.232969,-3.0266314,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>61. TPH 5</name>
+      <description>
+ID: 127314
+KodeTph: MKM-BDE-16-M022A18
+Coordinates: -3.0270881, 114.2329771
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329771,-3.0270881,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>62. TPH 4</name>
+      <description>
+ID: 127315
+KodeTph: MKM-BDE-16-M022A19
+Coordinates: -3.0274949, 114.2329959
+      </description>
+      <styleUrl>#tphStyle</styleUrl>
+      <Point>
+        <coordinates>114.2329959,-3.0274949,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TPH Route</name>
+      <description>Optimized route through all TPH points</description>
+      <styleUrl>#pathStyle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          114.2329558,-3.027944,0
+          114.2329422,-3.0278608,0
+          114.2329592,-3.028185,0
+          114.2329547,-3.0285821,0
+          114.232968,-3.0287681,0
+          114.2329449,-3.0291651,0
+          114.2329396,-3.0294596,0
+          114.2329495,-3.029588,0
+          114.2329495,-3.0299081,0
+          114.2329282,-3.0303231,0
+          114.2329357,-3.0305855,0
+          114.2329101,-3.030839,0
+          114.232885,-3.0311579,0
+          114.2329127,-3.0313558,0
+          114.2328772,-3.0313748,0
+          114.2328927,-3.0318928,0
+          114.2329116,-3.0319983,0
+          114.2328677,-3.0345194,0
+          114.2301933,-3.0322298,0
+          114.2301794,-3.0321298,0
+          114.2301796,-3.0320864,0
+          114.2301943,-3.0316943,0
+          114.2301825,-3.0316938,0
+          114.2301749,-3.0314959,0
+          114.2301831,-3.0313019,0
+          114.2302089,-3.0310406,0
+          114.2302046,-3.0309029,0
+          114.2302375,-3.0308174,0
+          114.2301938,-3.0305033,0
+          114.2301985,-3.0300838,0
+          114.2302046,-3.0300362,0
+          114.2301913,-3.0296,0
+          114.2302741,-3.0295953,0
+          114.2302558,-3.0293699,0
+          114.2302123,-3.0292218,0
+          114.2302458,-3.0287443,0
+          114.2302378,-3.0282827,0
+          114.2302379,-3.028029,0
+          114.2302454,-3.0278241,0
+          114.2302523,-3.0274306,0
+          114.2302583,-3.026999,0
+          114.2302588,-3.026588,0
+          114.2302656,-3.0260828,0
+          114.2302612,-3.0257072,0
+          114.2302521,-3.0252918,0
+          114.2302584,-3.0248736,0
+          114.2302592,-3.0244745,0
+          114.23027,-3.0240461,0
+          114.2302715,-3.0236336,0
+          114.231718,-3.023435,0
+          114.2330073,-3.0236358,0
+          114.2329964,-3.0240678,0
+          114.2329944,-3.024484,0
+          114.2329704,-3.0249382,0
+          114.2329697,-3.0253263,0
+          114.2329918,-3.0256362,0
+          114.2329585,-3.0257883,0
+          114.2329954,-3.0260424,0
+          114.2329844,-3.0262703,0
+          114.232969,-3.0266314,0
+          114.2329771,-3.0270881,0
+          114.2329959,-3.0274949,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

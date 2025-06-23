@@ -24,9 +24,11 @@ async def test_simple():
         print("\n📋 Running query: SELECT * FROM tph ORDER BY id DESC LIMIT 100")
         
         results = await execute_query("""
-            SELECT * FROM tph 
-            ORDER BY id DESC 
-            LIMIT 100
+          SELECT * FROM tph
+           WHERE dept_abbr = "BDE"
+            AND divisi_abbr = "AFD-OB"
+            AND blok_kode = "M022B"
+            ORDER BY update_date DESC
         """)
         
         print(f"✅ Query returned {len(results)} records")

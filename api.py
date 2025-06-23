@@ -21,7 +21,7 @@ from config import HOST, PORT
 # Import from main.py
 from main import (
     TPH, get_tph_data, nearest_neighbor_algorithm, 
-    update_tph_order, update_tph_numbers, create_kml,
+    update_tph_numbers, create_kml,
     init_db, close_db
 )
 
@@ -102,7 +102,7 @@ def validate_filters(dept_abbr: Optional[str], divisi_abbr: Optional[str], blok_
 app = FastAPI(
     title="TPH Route Optimizer API",
     description="Secure API untuk optimasi rute TPH menggunakan Nearest Neighbor Algorithm",
-    version="1.1.0",
+    version="1.2.0",
     docs_url="/docs",  # Will require API key
     redoc_url="/redoc"  # Will require API key
 )
@@ -166,13 +166,13 @@ async def shutdown_event():
 async def root():
     return {
         "message": "TPH Route Optimizer API - Secured",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "security": "API Key Authentication Required",
         "endpoints": {
             "auth_info": "/auth-info",
             "optimize_route": "/optimize-route",
-            "update_order": "/update-order", 
             "update_numbers": "/update-numbers",
+            "tph_data": "/tph-data",
             "download_kml": "/download-kml/{filename}"
         },
         "documentation": "Access /docs with valid API key"
@@ -203,30 +203,22 @@ async def optimize_route(
     blok_kode: Optional[str] = Query(None, description="Block code"),
     generate_kml: bool = Query(False, description="Generate KML file"),
     start_index: int = Query(0, description="Starting point index"),
-    auto_update: bool = Query(False, description="Automatically update database"),
-    update_type: str = Query("order", description="Type of update: 'order' for display_order, 'numbers' for actual TPH numbers"),
+    auto_update: bool = Query(False, description="Automatically update TPH numbers in database"),
     user_info: dict = Depends(check_permission("read")),
     _: bool = Depends(rate_limit_check)
 ):
     """
     Optimize TPH route using Nearest Neighbor Algorithm
     Requires 'read' permission for preview only
-    Requires 'write' permission for auto_update with update_type='order'
-    Requires 'admin' permission for auto_update with update_type='numbers'
+    Requires 'admin' permission for auto_update=true (updates actual TPH numbers)
     """
     try:
         # Check permissions for auto_update
-        if auto_update:
-            if update_type == "numbers" and "admin" not in user_info["permissions"]:
-                raise HTTPException(
-                    status_code=403,
-                    detail="Auto update with 'numbers' type requires admin permission"
-                )
-            elif update_type == "order" and "write" not in user_info["permissions"]:
-                raise HTTPException(
-                    status_code=403,
-                    detail="Auto update requires write permission"
-                )
+        if auto_update and "admin" not in user_info["permissions"]:
+            raise HTTPException(
+                status_code=403,
+                detail="Auto update requires admin permission"
+            )
         
         # Validate input filters
         validate_filters(dept_abbr, divisi_abbr, blok_kode)
@@ -250,12 +242,8 @@ async def optimize_route(
         # Auto update database if requested
         update_msg = ""
         if auto_update:
-            if update_type == "numbers":
-                await update_tph_numbers(ordered_tph)
-                update_msg = " and TPH numbers updated"
-            else:  # default to "order"
-                await update_tph_order(ordered_tph)
-                update_msg = " and display order updated"
+            await update_tph_numbers(ordered_tph)
+            update_msg = " and TPH numbers updated"
         
         # Convert to response format
         route = []
@@ -296,52 +284,6 @@ async def optimize_route(
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error optimizing route: {str(e)}")
-
-@app.post("/update-order", response_model=UpdateResponse)
-async def update_display_order(
-    request: Request,
-    dept_abbr: Optional[str] = Query(None, description="Department abbreviation"),
-    divisi_abbr: Optional[str] = Query(None, description="Division abbreviation"),
-    blok_kode: Optional[str] = Query(None, description="Block code"),
-    start_index: int = Query(0, description="Starting point index"),
-    user_info: dict = Depends(check_permission("write")),
-    _: bool = Depends(rate_limit_check)
-):
-    """
-    Update display order in database based on optimized route
-    Requires 'write' permission
-    """
-    try:
-        # Validate input filters
-        validate_filters(dept_abbr, divisi_abbr, blok_kode)
-        
-        # Get and optimize TPH data
-        tph_data = await get_tph_data(dept_abbr, divisi_abbr, blok_kode)
-        
-        if not tph_data:
-            raise HTTPException(
-                status_code=404, 
-                detail="No TPH data found with the specified filters"
-            )
-        
-        if start_index >= len(tph_data):
-            start_index = 0
-            
-        ordered_tph = nearest_neighbor_algorithm(tph_data, start_index)
-        
-        # Update display order in database
-        await update_tph_order(ordered_tph)
-        
-        return UpdateResponse(
-            success=True,
-            message="Display order updated successfully",
-            updated_count=len(ordered_tph)
-        )
-        
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error updating display order: {str(e)}")
 
 @app.post("/update-numbers", response_model=UpdateResponse)
 async def update_tph_numbering(
@@ -396,22 +338,27 @@ async def download_kml(
     user_info: dict = Depends(check_permission("admin")),
     _: bool = Depends(rate_limit_check)
 ):
-    """
-    Download generated KML file
-    Requires 'admin' permission
-    """
-    # Validate filename to prevent directory traversal
-    if not filename.endswith('.kml') or '/' in filename or '\\' in filename:
-        raise HTTPException(status_code=400, detail="Invalid filename")
+    """Download generated KML file"""
+    try:
+        # Validate filename (security check)
+        if not filename.endswith('.kml') or '..' in filename or '/' in filename:
+            raise HTTPException(status_code=400, detail="Invalid filename")
         
-    if not os.path.exists(filename):
-        raise HTTPException(status_code=404, detail="KML file not found")
-    
-    return FileResponse(
-        path=filename,
-        media_type='application/vnd.google-earth.kml+xml',
-        filename=filename
-    )
+        file_path = os.path.join(os.getcwd(), filename)
+        
+        if not os.path.exists(file_path):
+            raise HTTPException(status_code=404, detail="File not found")
+        
+        return FileResponse(
+            path=file_path,
+            filename=filename,
+            media_type='application/vnd.google-earth.kml+xml'
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error downloading file: {str(e)}")
 
 @app.get("/tph-data")
 async def get_tph_raw_data(
@@ -422,14 +369,12 @@ async def get_tph_raw_data(
     user_info: dict = Depends(check_permission("read")),
     _: bool = Depends(rate_limit_check)
 ):
-    """
-    Get raw TPH data without optimization
-    Requires 'read' permission
-    """
+    """Get raw TPH data without optimization"""
     try:
         # Validate input filters
         validate_filters(dept_abbr, divisi_abbr, blok_kode)
         
+        # Get TPH data with filters
         tph_data = await get_tph_data(dept_abbr, divisi_abbr, blok_kode)
         
         if not tph_data:
@@ -438,9 +383,10 @@ async def get_tph_raw_data(
                 detail="No TPH data found with the specified filters"
             )
         
-        result = []
+        # Convert to response format
+        data = []
         for tph in tph_data:
-            result.append({
+            data.append({
                 "id": tph.id,
                 "nomor": tph.nomor,
                 "tph": tph.kode_tph or "",
@@ -452,8 +398,9 @@ async def get_tph_raw_data(
         
         return {
             "success": True,
-            "total_points": len(result),
-            "data": result
+            "message": f"Retrieved {len(data)} TPH records",
+            "total_points": len(data),
+            "data": data
         }
         
     except HTTPException:
@@ -463,8 +410,4 @@ async def get_tph_raw_data(
 
 if __name__ == "__main__":
     import uvicorn
-    print(f"🚀 Starting TPH Route Optimizer API...")
-    print(f"🌐 Server: http://{HOST}:{PORT}")
-    print(f"📚 API Docs: http://{HOST}:{PORT}/docs")
-    print(f"🔑 Use API Keys: tph_admin_2024, tph_operator_2024, tph_read_2024")
     uvicorn.run(app, host=HOST, port=PORT) 
