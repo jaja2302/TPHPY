@@ -110,15 +110,48 @@ app = FastAPI(
 # Security Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],  # Add your frontend URLs
+    allow_origins=[
+        "http://localhost:3000", 
+        "http://127.0.0.1:3000",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
+        # Allow private network ranges for company use
+        "http://10.*",
+        "http://192.168.*",
+        "https://10.*", 
+        "https://192.168.*"
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
 app.add_middleware(
     TrustedHostMiddleware, 
-    allowed_hosts=["localhost", "127.0.0.1", "*.yourdomain.com"]  # Add your domain
+    allowed_hosts=[
+        "localhost", 
+        "127.0.0.1", 
+        "*.yourdomain.com",
+        # Allow private IP ranges for company networks
+        "10.*",
+        "192.168.*",
+        "172.16.*",
+        "172.17.*",
+        "172.18.*",
+        "172.19.*",
+        "172.20.*",
+        "172.21.*",
+        "172.22.*",
+        "172.23.*",
+        "172.24.*",
+        "172.25.*",
+        "172.26.*",
+        "172.27.*",
+        "172.28.*",
+        "172.29.*",
+        "172.30.*",
+        "172.31.*"
+    ]
 )
 
 # Response Models
