@@ -3,16 +3,18 @@ import aiomysql
 import os
 from typing import List, Dict, Any, Optional
 from contextlib import asynccontextmanager
+from config import DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
+
 
 # Database configuration
 DB_CONFIG = {
-    'host': os.getenv('DB_HOST', 'localhost'),
-    'port': int(os.getenv('DB_PORT', 3306)),
-    'user': os.getenv('DB_USER', 'root'),
-    'password': os.getenv('DB_PASSWORD', ''),
-    'db': os.getenv('DB_NAME', 'tph_database'),
+    'host': DB_HOST,
+    'port': DB_PORT,
+    'user': DB_USER,
+    'password': DB_PASSWORD,
+    'db': DB_NAME,
     'autocommit': True,
-    'charset': 'utf8mb4'
+    # 'charset': 'utf8mb4'
 }
 
 # Global connection pool

@@ -14,6 +14,9 @@ from datetime import datetime, timedelta
 from pydantic import BaseModel
 from collections import defaultdict
 
+# Import config
+from config import HOST, PORT
+
 # Import from main.py
 from main import (
     TPH, get_tph_data, nearest_neighbor_algorithm, 
@@ -427,4 +430,8 @@ async def get_tph_raw_data(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+    print(f"🚀 Starting TPH Route Optimizer API...")
+    print(f"🌐 Server: http://{HOST}:{PORT}")
+    print(f"📚 API Docs: http://{HOST}:{PORT}/docs")
+    print(f"🔑 Use API Keys: tph_admin_2024, tph_operator_2024, tph_read_2024")
+    uvicorn.run(app, host=HOST, port=PORT) 
