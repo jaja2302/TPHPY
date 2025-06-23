@@ -203,14 +203,31 @@ async def optimize_route(
     blok_kode: Optional[str] = Query(None, description="Block code"),
     generate_kml: bool = Query(False, description="Generate KML file"),
     start_index: int = Query(0, description="Starting point index"),
+    auto_update: bool = Query(False, description="Automatically update database"),
+    update_type: str = Query("order", description="Type of update: 'order' for display_order, 'numbers' for actual TPH numbers"),
     user_info: dict = Depends(check_permission("read")),
     _: bool = Depends(rate_limit_check)
 ):
     """
     Optimize TPH route using Nearest Neighbor Algorithm
-    Requires 'read' permission
+    Requires 'read' permission for preview only
+    Requires 'write' permission for auto_update with update_type='order'
+    Requires 'admin' permission for auto_update with update_type='numbers'
     """
     try:
+        # Check permissions for auto_update
+        if auto_update:
+            if update_type == "numbers" and "admin" not in user_info["permissions"]:
+                raise HTTPException(
+                    status_code=403,
+                    detail="Auto update with 'numbers' type requires admin permission"
+                )
+            elif update_type == "order" and "write" not in user_info["permissions"]:
+                raise HTTPException(
+                    status_code=403,
+                    detail="Auto update requires write permission"
+                )
+        
         # Validate input filters
         validate_filters(dept_abbr, divisi_abbr, blok_kode)
         
@@ -229,6 +246,16 @@ async def optimize_route(
         
         # Apply Nearest Neighbor algorithm
         ordered_tph = nearest_neighbor_algorithm(tph_data, start_index)
+        
+        # Auto update database if requested
+        update_msg = ""
+        if auto_update:
+            if update_type == "numbers":
+                await update_tph_numbers(ordered_tph)
+                update_msg = " and TPH numbers updated"
+            else:  # default to "order"
+                await update_tph_order(ordered_tph)
+                update_msg = " and display order updated"
         
         # Convert to response format
         route = []
@@ -259,7 +286,7 @@ async def optimize_route(
         
         return OptimizedRouteResponse(
             success=True,
-            message=f"Successfully optimized route for {len(ordered_tph)} TPH points",
+            message=f"Successfully optimized route for {len(ordered_tph)} TPH points{update_msg}",
             total_points=len(ordered_tph),
             route=route,
             kml_file=kml_file

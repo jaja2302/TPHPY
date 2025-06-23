@@ -164,13 +164,6 @@ def nearest_neighbor_algorithm(points: List[TPH], start_index: int = 0) -> List[
     
     return ordered_points
 
-async def update_tph_order(ordered_tph: List[TPH]) -> None:
-    """Update the display order of TPH in the database"""
-    for new_order, tph in enumerate(ordered_tph, 1):
-        query = "UPDATE tph SET display_order = %s WHERE id = %s"
-        await execute_query(query, (new_order, tph.id))
-    print(f"Successfully updated display order for {len(ordered_tph)} TPH points")
-
 async def update_tph_numbers(ordered_tph: List[TPH]) -> None:
     """Update the actual TPH numbers to match the optimized route order"""
     for new_number, tph in enumerate(ordered_tph, 1):
@@ -310,7 +303,7 @@ async def main():
         update_option = input("\nDo you want to:\n1. Update display order only\n2. Renumber TPH points to match route order\n3. Skip database updates\nEnter option (1/2/3): ").strip()
         
         if update_option == "1":
-            await update_tph_order(ordered_tph)
+            print("Skipping display order update.")
         elif update_option == "2":
             await update_tph_numbers(ordered_tph)
         else:

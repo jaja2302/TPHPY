@@ -77,6 +77,7 @@ Params:
   blok_kode: BLK001
   generate_kml: true (requires admin token)
   start_index: 0
+  auto_update: false (set to true for automatic TPH number update)
 ```
 
 **Expected Response:**
@@ -101,19 +102,33 @@ Params:
 }
 ```
 
-### 3. **POST** - Update Display Order
+### 2a. **GET** - Optimize Route + Auto Update TPH Numbers
 ```
-Method: POST
-URL: {{base_url}}/update-order
+Method: GET
+URL: {{base_url}}/optimize-route  
 Headers:
-  Authorization: Bearer {{operator_token}}
+  Authorization: Bearer {{admin_token}}  // Requires admin permission
 Params:
   dept_abbr: PKS
-  divisi_abbr: DIV1
-  blok_kode: BLK001
+  divisi_abbr: AFD-OA
+  blok_kode: D003A
+  auto_update: true
+  generate_kml: true
+  start_index: 1
 ```
 
-### 4. **POST** - Update TPH Numbers (Admin Only)
+**Expected Response:**
+```json
+{
+  "success": true,
+  "message": "Successfully optimized route for 8 TPH points and TPH numbers updated",
+  "total_points": 8,
+  "route": [...],
+  "kml_file": "tph_route_PKS_AFD-OA_D003A_20241213_150022.kml"
+}
+```
+
+### 3. **POST** - Update TPH Numbers (Admin Only)
 ```
 Method: POST
 URL: {{base_url}}/update-numbers
@@ -122,9 +137,10 @@ Headers:
 Params:
   dept_abbr: PKS
   divisi_abbr: DIV1
+  blok_kode: BLK001
 ```
 
-### 5. **GET** - Get Raw TPH Data
+### 4. **GET** - Get Raw TPH Data
 ```
 Method: GET
 URL: {{base_url}}/tph-data
@@ -135,7 +151,7 @@ Params:
   divisi_abbr: DIV1
 ```
 
-### 6. **GET** - Download KML File
+### 5. **GET** - Download KML File
 ```
 Method: GET
 URL: {{base_url}}/download-kml/tph_route_PKS_DIV1_BLK001_20241213_143022.kml
