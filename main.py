@@ -122,11 +122,15 @@ async def get_tph_data(dept_abbr: Optional[str] = None,
 
 def nearest_neighbor_algorithm(points: List[TPH], start_index: int = 0) -> List[TPH]:
     """
-    Implement Nearest Neighbor algorithm to reorder points
-    based on proximity
+    DEPRECATED: Use nearest_neighbor_from_tph_number instead
+    Implement Nearest Neighbor algorithm to reorder points based on array index
     """
     if not points:
         return []
+    
+    # Validate start_index
+    if start_index >= len(points):
+        start_index = 0
     
     # Start with the point at the given index
     ordered_points = [points[start_index]]
@@ -164,12 +168,104 @@ def nearest_neighbor_algorithm(points: List[TPH], start_index: int = 0) -> List[
     
     return ordered_points
 
+def nearest_neighbor_from_tph_number(points: List[TPH], start_tph_number: int = 1) -> List[TPH]:
+    """
+    Implement Nearest Neighbor algorithm starting from specific TPH number
+    Only reorders TPH with nomor >= start_tph_number
+    TPH with nomor < start_tph_number remain unchanged in their original positions
+    """
+    if not points:
+        return []
+    
+    # Separate TPH into two groups: unchanged and to be reordered
+    unchanged_tph = [tph for tph in points if tph.nomor < start_tph_number]
+    to_reorder_tph = [tph for tph in points if tph.nomor >= start_tph_number]
+    
+    if not to_reorder_tph:
+        print(f"No TPH found with nomor >= {start_tph_number}")
+        return points
+    
+    # Find the starting TPH (with nomor = start_tph_number)
+    start_tph = None
+    for tph in to_reorder_tph:
+        if tph.nomor == start_tph_number:
+            start_tph = tph
+            break
+    
+    if not start_tph:
+        # If exact start_tph_number not found, use the first TPH with nomor >= start_tph_number
+        to_reorder_tph.sort(key=lambda x: x.nomor)
+        start_tph = to_reorder_tph[0]
+        print(f"TPH nomor {start_tph_number} not found, starting from TPH nomor {start_tph.nomor}")
+    
+    # Apply nearest neighbor algorithm to reorder group
+    ordered_reorder = [start_tph]
+    unvisited = [tph for tph in to_reorder_tph if tph.id != start_tph.id]
+    
+    while unvisited:
+        current_point = ordered_reorder[-1]
+        
+        # Find nearest unvisited point
+        nearest_point = None
+        min_distance = float('inf')
+        nearest_idx = -1
+        
+        for i, point in enumerate(unvisited):
+            try:
+                distance = haversine_distance(current_point, point)
+                if distance < min_distance:
+                    min_distance = distance
+                    nearest_point = point
+                    nearest_idx = i
+            except Exception as e:
+                print(f"Error calculating distance: {str(e)}")
+        
+        # Add the nearest point to our ordered list
+        if nearest_point and nearest_idx >= 0:
+            ordered_reorder.append(nearest_point)
+            unvisited.pop(nearest_idx)
+        else:
+            print("Warning: Could not find nearest point, breaking loop")
+            ordered_reorder.extend(unvisited)
+            break
+    
+    # Combine unchanged TPH (sorted by original nomor) + reordered TPH
+    unchanged_tph.sort(key=lambda x: x.nomor)
+    final_result = unchanged_tph + ordered_reorder
+    
+    print(f"Unchanged TPH (nomor < {start_tph_number}): {len(unchanged_tph)} points")
+    print(f"Reordered TPH (nomor >= {start_tph_number}): {len(ordered_reorder)} points")
+    
+    return final_result
+
 async def update_tph_numbers(ordered_tph: List[TPH]) -> None:
     """Update the actual TPH numbers to match the optimized route order"""
     for new_number, tph in enumerate(ordered_tph, 1):
         query = "UPDATE tph SET nomor = %s WHERE id = %s"
         await execute_query(query, (new_number, tph.id))
     print(f"Successfully renumbered {len(ordered_tph)} TPH points to match route order")
+
+async def update_tph_numbers_partial(ordered_tph: List[TPH], start_tph_number: int = 1) -> None:
+    """Update TPH numbers starting from start_tph_number, keeping lower numbers unchanged"""
+    unchanged_count = 0
+    updated_count = 0
+    
+    for i, tph in enumerate(ordered_tph):
+        if tph.nomor < start_tph_number:
+            # Skip updating TPH with nomor < start_tph_number
+            unchanged_count += 1
+            continue
+        
+        # Calculate new number starting from start_tph_number
+        new_number = start_tph_number + (i - unchanged_count)
+        
+        if new_number != tph.nomor:
+            query = "UPDATE tph SET nomor = %s WHERE id = %s"
+            await execute_query(query, (new_number, tph.id))
+            updated_count += 1
+    
+    print(f"Unchanged TPH (nomor < {start_tph_number}): {unchanged_count} points")
+    print(f"Updated TPH numbers: {updated_count} points")
 
 def create_kml(ordered_tph: List[TPH], output_file: str):
     """Generate KML file for Google Earth visualization"""
@@ -272,7 +368,7 @@ async def main():
         print(f"Starting reordering from {tph_data[start_index]}")
         
         # Apply Nearest Neighbor algorithm
-        ordered_tph = nearest_neighbor_algorithm(tph_data, start_index)
+        ordered_tph = nearest_neighbor_from_tph_number(tph_data, start_index)
         
         print("\nReordered TPH points (from nearest to farthest):")
         

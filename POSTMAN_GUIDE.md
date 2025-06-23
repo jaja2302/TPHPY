@@ -76,7 +76,7 @@ Params:
   divisi_abbr: DIV1
   blok_kode: BLK001
   generate_kml: true (requires admin token)
-  start_index: 0
+  start_tph_number: 1 (only TPH >= this number will be reordered)
   auto_update: false (set to true for automatic TPH number update)
 ```
 
@@ -114,19 +114,24 @@ Params:
   blok_kode: D003A
   auto_update: true
   generate_kml: true
-  start_index: 1
+  start_tph_number: 10
 ```
 
 **Expected Response:**
 ```json
 {
   "success": true,
-  "message": "Successfully optimized route for 8 TPH points and TPH numbers updated",
+  "message": "Successfully optimized route for 8 TPH points and TPH numbers updated (starting from nomor 10)",
   "total_points": 8,
   "route": [...],
   "kml_file": "tph_route_PKS_AFD-OA_D003A_20241213_150022.kml"
 }
 ```
+
+**Note:** 
+- `start_tph_number=10` means only TPH with nomor >= 10 will be reordered
+- TPH with nomor 1-9 remain unchanged
+- The optimization starts from TPH nomor 10 and finds nearest neighbors for 11, 12, 13, etc.
 
 ### 3. **POST** - Update TPH Numbers (Admin Only)
 ```
@@ -138,6 +143,16 @@ Params:
   dept_abbr: PKS
   divisi_abbr: DIV1
   blok_kode: BLK001
+  start_tph_number: 5
+```
+
+**Expected Response:**
+```json
+{
+  "success": true,
+  "message": "TPH numbers updated successfully (starting from nomor 5)",
+  "updated_count": 15
+}
 ```
 
 ### 4. **GET** - Get Raw TPH Data

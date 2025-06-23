@@ -20,8 +20,8 @@ from config import HOST, PORT
 
 # Import from main.py
 from main import (
-    TPH, get_tph_data, nearest_neighbor_algorithm, 
-    update_tph_numbers, create_kml,
+    TPH, get_tph_data, nearest_neighbor_from_tph_number, 
+    update_tph_numbers_partial, create_kml,
     init_db, close_db
 )
 
@@ -202,15 +202,18 @@ async def optimize_route(
     divisi_abbr: Optional[str] = Query(None, description="Division abbreviation"),
     blok_kode: Optional[str] = Query(None, description="Block code"),
     generate_kml: bool = Query(False, description="Generate KML file"),
-    start_index: int = Query(0, description="Starting point index"),
+    start_tph_number: int = Query(1, description="Starting TPH number (only TPH >= this number will be reordered)"),
     auto_update: bool = Query(False, description="Automatically update TPH numbers in database"),
     user_info: dict = Depends(check_permission("read")),
     _: bool = Depends(rate_limit_check)
 ):
     """
-    Optimize TPH route using Nearest Neighbor Algorithm
+    Optimize TPH route using Nearest Neighbor Algorithm starting from specific TPH number
     Requires 'read' permission for preview only
     Requires 'admin' permission for auto_update=true (updates actual TPH numbers)
+    
+    start_tph_number: Only TPH with nomor >= start_tph_number will be reordered
+    TPH with nomor < start_tph_number remain unchanged
     """
     try:
         # Check permissions for auto_update
@@ -232,18 +235,18 @@ async def optimize_route(
                 detail="No TPH data found with the specified filters"
             )
         
-        # Validate start_index
-        if start_index >= len(tph_data):
-            start_index = 0
+        # Validate start_tph_number
+        if start_tph_number < 1:
+            start_tph_number = 1
         
-        # Apply Nearest Neighbor algorithm
-        ordered_tph = nearest_neighbor_algorithm(tph_data, start_index)
+        # Apply Nearest Neighbor algorithm starting from TPH number
+        ordered_tph = nearest_neighbor_from_tph_number(tph_data, start_tph_number)
         
         # Auto update database if requested
         update_msg = ""
         if auto_update:
-            await update_tph_numbers(ordered_tph)
-            update_msg = " and TPH numbers updated"
+            await update_tph_numbers_partial(ordered_tph, start_tph_number)
+            update_msg = f" and TPH numbers updated (starting from nomor {start_tph_number})"
         
         # Convert to response format
         route = []
@@ -291,13 +294,15 @@ async def update_tph_numbering(
     dept_abbr: Optional[str] = Query(None, description="Department abbreviation"),
     divisi_abbr: Optional[str] = Query(None, description="Division abbreviation"),
     blok_kode: Optional[str] = Query(None, description="Block code"),
-    start_index: int = Query(0, description="Starting point index"),
+    start_tph_number: int = Query(1, description="Starting TPH number (only TPH >= this number will be reordered)"),
     user_info: dict = Depends(check_permission("admin")),  # Only admin can renumber
     _: bool = Depends(rate_limit_check)
 ):
     """
     Update actual TPH numbers in database based on optimized route
     Requires 'admin' permission (critical operation)
+    
+    start_tph_number: Only TPH with nomor >= start_tph_number will be reordered
     """
     try:
         # Validate input filters
@@ -312,18 +317,18 @@ async def update_tph_numbering(
                 detail="No TPH data found with the specified filters"
             )
         
-        if start_index >= len(tph_data):
-            start_index = 0
+        if start_tph_number < 1:
+            start_tph_number = 1
             
-        ordered_tph = nearest_neighbor_algorithm(tph_data, start_index)
+        ordered_tph = nearest_neighbor_from_tph_number(tph_data, start_tph_number)
         
         # Update TPH numbers in database
-        await update_tph_numbers(ordered_tph)
+        await update_tph_numbers_partial(ordered_tph, start_tph_number)
         
         return UpdateResponse(
             success=True,
-            message="TPH numbers updated successfully",
-            updated_count=len(ordered_tph)
+            message=f"TPH numbers updated successfully (starting from nomor {start_tph_number})",
+            updated_count=len([tph for tph in ordered_tph if tph.nomor >= start_tph_number])
         )
         
     except HTTPException:
