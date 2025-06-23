@@ -31,7 +31,6 @@ async def init_db():
             password=DB_CONFIG['password'],
             db=DB_CONFIG['db'],
             autocommit=DB_CONFIG['autocommit'],
-            charset=DB_CONFIG['charset'],
             minsize=1,
             maxsize=10
         )
