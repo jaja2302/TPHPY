@@ -115,11 +115,13 @@ app.add_middleware(
         "http://127.0.0.1:3000",
         "http://localhost:8000",
         "http://127.0.0.1:8000",
+        
         # Allow private network ranges for company use
         "http://10.*",
         "http://192.168.*",
         "https://10.*", 
         "https://192.168.*"
+        "http://10.9.116.125:*"
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
